@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/allison-script" rel="stylesheet">
+    <link href="http://fonts.cdnfonts.com/css/sackers-gothic-medium" rel="stylesheet">
+    <link rel="stylesheet" href="./main.css">
+    <title>Jewellery Landing Page</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Left Portion  Starts -->
+        <div class="left-container">
+            <div class="left_top-container">
+                <div class="logo_author-container">
+                    <h1 class="logo">FLOURISH</h1>
+                    <p class="author_name">BY GUNJAN JAIN</p>
+                </div>
+                <div class="brandTag">
+                    <p class="brand_tagline1">Redefining Luxury</p>
+                    <p class="brand_tagline2">Reinventing You</p>
+                </div>
+            </div>
+            <div class="image_card-one">
+                <img src="./imgs/A6 (Vertical)@2x.png" alt="verticalImage">
+            </div>
+            <img src="./imgs/Illustration Blue (c) (1).png" alt="blueImage">
+        </div> <!-- Left Portion  Ends -->
+
+        
+        <!-- Right Portion  Starts -->
+        <div class="right-container">
+
+              <!-- Blue Container Form Section Starts -->
+           <div class="blue_container toggle_form">
+            <div class="contents">
+                <h2 class="title">GET IN TOUCH WITH US</h2>
+                <a href="" class="closeToggle" onclick="closeToggleForm()">
+                    <span class="material-icons"> close</span>
+                </a>
+            </div>
+            <p class="chatbot_text">HAVE A QUESTION, CONCERN OR REQUEST?</p>
+            <p class="chatbot_text">WE'D LOVE TO HEAR FROM YOU</p>
+            <hr>
+            <div class="call_email-container">
+                <div class="call_container">
+                    <span class="material-icons"> phone</span>
+                    <div class="num">
+                        <span class="title">CALL</span>
+                       <div class="inner_content">
+                        <a href="tel:+91 75950 90470">+91 75950 90470
+                            <span class="material-icons whatsapp"> whatsapp</span>
+                        </a>
+                       </div>
+                    </div>
+                </div>
+                <div class="email_container">
+                    <span class="material-icons"> mail_outline</span>
+                    <div class="email">
+                        <span class="title">EMAIL</span>
+                       <div class="inner_content">
+                        <a class="email_link" target="_top" href="mailto:https://mail.google.com/mail/u/0/#inbox?compose=new">
+                            CARE@FLOURISHBYGUNJANJAIN.COM
+                        </a>
+                       </div>
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <!-- Blue Container Form Section Ends -->
+
+            <div class="top_img-container">
+                <img src="./imgs/A7 (Vertical).png" alt="verticle_img-right">
+            </div>
+            <div class="down_img-container">
+                <img src="./imgs/A5 (Vertical).png" alt="ladyWatching">
+            </div>
+            <div class="text_card">
+                <p class="cc_text">Confident & Charming</p>
+            </div>
+            <div class="input_box">
+                <p class="input_title">COMING SOON</p>
+                <input type="text" placeholder= "ENTER YOUR EMAIL TO STAY UPDATED">
+            </div>
+            <button type="button" class="btn" onclick="toggleForm()">Contact</button>
+        </div>   <!-- Right Portion  Ends -->
+    </div>
+         
+        <script>
+            function toggleForm() {
+               var viewBlueContainer = document.getElementsByClassName('blue_container');
+               console.log('webpage', viewBlueContainer );
+               if(viewBlueContainer.length > 0 ) {
+                    viewBlueContainer[0].style.display = "block";
+               }
+            }
+
+            function closeToggleForm() {
+                var closeToggle = document.getElementsByClassName('closeToggle');
+                var viewBlueContainer = document.getElementsByClassName('blue_container');
+               console.log('webpage', viewBlueContainer );
+               if(closeToggle.length > 0 ) {
+                    viewBlueContainer[0].style.display = "none";
+               }
+            }
+        </script>
+    </body>
+</html>
+
+
+

@@ -1,0 +1,273 @@
+@import url('http://fonts.cdnfonts.com/css/sackers-gothic-medium');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* background-color: #ffd0d6; */
+   background-image: url('./imgs/bg.svg');
+}
+
+.container {
+    /* background-image: url('./imgs/Background.png'); */
+    background-size: contain;
+    position: relative;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.left-container {
+    margin-left: 4.2rem;
+    width: 50%;
+    height: 100vh;
+}
+
+.left_top-container {
+    position: relative;
+}
+.logo_author-container {
+    width: 50%;
+    position: absolute;
+    top: 5rem;
+    right:-4rem;
+}
+.logo {
+    font-family: Sackers Gothic Medium;
+    font-size: 2rem;
+    text-align: center;
+    font-weight: 400;
+}
+.author_name {
+    font-family: Sackers Gothic Medium;
+    font-size: 1rem;
+    font-weight: 100;
+    text-align: center;
+}
+.brandTag {
+    width: 50%;
+    position: absolute;
+    top: 12rem;
+    right:-4rem;
+}
+.brand_tagline1 {
+    font-family: Allison Script;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+.brand_tagline2 {
+    font-family: Allison Script;
+    font-size: 2.5rem;
+    font-weight: 100;
+    text-align: center;
+}
+
+.image_card-one {
+    position: absolute;
+    height: 45%;
+    width: 40%;
+    top: 3rem;
+}
+
+.image_card-one img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.left-container img {
+    padding: 0.5rem 0.2rem;
+    width: 40%;
+    height: calc(100vh - 45%);
+    position: absolute;
+    bottom: 0;
+}
+
+/* right contianer */
+.right-container {
+    position: relative;
+    width: 50%;
+    height: 100vh;
+}
+
+.top_img-container {
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 50px;
+    width: 40%;
+    height: 30%;
+}
+
+.top_img-container img {
+  width: 60%;
+  max-height: 100%;
+}
+
+.down_img-container {
+    margin-left: 25%;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    width: 40%;
+    height: 30%;
+}
+
+.down_img-container img {
+    width: 60%;
+    height: auto;
+}
+
+.text_card {
+    background-color: #fff;
+    margin-left: 1.2rem;
+    border: 2px solid rgb(19, 19, 19); 
+    border-width: 0 0 2px 2px;
+    position: absolute;
+    top: 380px;
+    width: 25%;
+    height: 15%;
+}
+
+.cc_text {
+    padding: 0.8rem;
+    font-family: Allison Script;
+    font-size: 2.25rem;
+    color: #000;
+}
+.input_box {
+    position: absolute;
+    bottom: 70px;
+    width: 100%;
+    height: 12%;
+}
+
+.input_title {
+    margin-left: 1.2rem;
+    font-family: Sackers Gothic Medium;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.input_box input {
+    margin-top: 0.6rem;
+    padding: 0.4rem 0 0.4rem 1.4rem;
+    border-radius: 20px;
+    position: absolute;
+    width: 80%;
+    background-color: #fff;
+    border: none;
+    outline: none;
+}
+
+.input_box input::placeholder {
+    font-family: Sackers Gothic Medium;
+    color: rgb(59, 35, 35);
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+ 
+.btn {
+    position: absolute;
+    padding: 0.2rem 0.5rem;
+    bottom: 2rem;
+    right: 3rem;
+    font-family: Allison Script;
+    font-size: 1.6rem;
+    cursor: pointer;
+}
+
+/* Blue form Section */
+
+.blue_container {  
+    position: absolute;
+    right: 0;
+    bottom: 0;     
+    z-index: 1000;
+    width: 70%;
+    height: 42%;
+    opacity: 0.8;
+    transition: all 0.3s ease 0s;
+    background-color:#170a45 !important;
+}
+
+.toggle_form {
+    display: none;
+}
+.contents {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.6rem;
+    margin-left: 1.8rem;
+    margin-bottom: 0.4rem;
+    
+}
+.title {
+    font-family: Sackers Gothic Medium;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: whitesmoke;
+}
+
+.closeToggle {
+    text-decoration: none;
+    color: white;
+}
+
+.chatbot_text {
+    margin-left: 1.8rem;
+    padding-top: 0.6rem;
+    font-family: Sackers Gothic Medium;
+    font-size: 0.8rem;
+    font-weight: normal;
+    color: whitesmoke;
+}
+
+hr {
+    margin-top: 1.6rem;
+    margin-left: 1.8rem;
+    border: 1px solid rgb(171, 181, 224);
+    border-radius: 5px;
+    width: 80%;
+}
+.call_email-container {
+    margin-top: 1.2rem;
+    margin-left: 1.8rem;
+}
+
+.material-icons {
+    color: whitesmoke;
+    padding-right: 0.8rem;
+}
+.call_container {
+    display: flex;
+}
+
+.inner_content {
+    display: flex;
+    justify-content: center;
+} 
+.inner_content a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+.email_container {
+    margin-top: 1.5rem;
+    display: flex;
+}
+
+.email_link {
+    font-family: Sackers Gothic Medium;
+    font-size: 0.8rem;
+    font-weight: normal;
+    margin-top: 0.5rem;
+    text-decoration: none;
+    color: whitesmoke;
+}
